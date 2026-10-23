@@ -7,6 +7,7 @@ final class PortScanUITests: XCTestCase {
     continueAfterFailure = false
   }
 
+  @MainActor
   func testOpeningADeviceShowsItsPorts() {
     let app = launch()
     let detail = DevicesRobot(app: app).waitForList().open("192.168.50.32")
@@ -16,6 +17,7 @@ final class PortScanUITests: XCTestCase {
     snapshot(app, "detail-archive")
   }
 
+  @MainActor
   func testCustomTCPAndUDPScanOfOneDevice() {
     let app = launch()
     let sheet = DevicesRobot(app: app).waitForList().open("192.168.50.50").scanPorts()
@@ -27,6 +29,7 @@ final class PortScanUITests: XCTestCase {
     snapshot(app, "detail-pihole-after-scan")
   }
 
+  @MainActor
   func testASpecThatDoesNotParseCannotStart() {
     let app = launch()
     let sheet = DevicesRobot(app: app).waitForList().open("192.168.50.32").scanPorts()
@@ -35,19 +38,20 @@ final class PortScanUITests: XCTestCase {
     XCTAssertFalse(sheet.startButton.isEnabled)
   }
 
+  @MainActor
   func testScanningThePortsOfSeveralDevices() {
     let app = launch()
     let devices = DevicesRobot(app: app).waitForList()
     devices.select(["192.168.50.30", "192.168.50.32", "192.168.50.35"])
     snapshot(app, "several-selected")
-    let detail = devices.scanPortsOfSelection().start()
-    _ = detail
+    devices.scanPortsOfSelection().start()
     // Each device's row shows its open count once the scan is done.
     let printer = devices.row("192.168.50.30")
     XCTAssertTrue(printer.waitForExistence(timeout: 10))
     XCTAssertFalse(app.descendants(matching: .any)["portScanRunning"].waitForExistence(timeout: 2))
   }
 
+  @MainActor
   func testANeverScannedLaunchScansFromTheEmptyState() {
     let app = launch(["-Fixture", "empty"])
     snapshot(app, "empty")

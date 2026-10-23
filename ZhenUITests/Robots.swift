@@ -1,7 +1,9 @@
 import XCTest
 
 /// The robots: what a person does, by accessibility identifier, never by label (AGENTS.md).
-/// A test reads as a sequence of intentions; the queries live here.
+/// A test reads as a sequence of intentions; the queries live here. Main-actor isolated,
+/// as XCUIElement is from Xcode 26.6's SDK on.
+@MainActor
 struct DevicesRobot {
   let app: XCUIApplication
 
@@ -44,6 +46,7 @@ struct DevicesRobot {
   }
 }
 
+@MainActor
 struct DetailRobot {
   let app: XCUIApplication
 
@@ -59,6 +62,7 @@ struct DetailRobot {
   }
 }
 
+@MainActor
 struct PortScanRobot {
   let app: XCUIApplication
 
@@ -75,6 +79,7 @@ struct PortScanRobot {
   var startButton: XCUIElement { app.buttons["startPortScanButton"] }
   var specError: XCUIElement { app.descendants(matching: .any)["portSpecError"].firstMatch }
 
+  @discardableResult
   func start() -> DetailRobot {
     startButton.tap()
     return DetailRobot(app: app)
@@ -83,6 +88,7 @@ struct PortScanRobot {
 
 extension XCTestCase {
   /// The app on the fixture network, fast.
+  @MainActor
   func launch(_ extra: [String] = []) -> XCUIApplication {
     let app = XCUIApplication()
     app.launchArguments = ["-UITesting"] + extra
@@ -91,6 +97,7 @@ extension XCTestCase {
   }
 
   /// Keeps a screenshot with the test's result, for reading what the test saw.
+  @MainActor
   func snapshot(_ app: XCUIApplication, _ name: String) {
     let attachment = XCTAttachment(screenshot: app.screenshot())
     attachment.name = name
