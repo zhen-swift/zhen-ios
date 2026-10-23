@@ -1,0 +1,32 @@
+Zhen for iPad, by zhen-swift — https://github.com/zhen-swift
+Copyright 2026 Juan Carlos Estévez Rodríguez
+
+This product includes Zhen for iPad, developed by zhen-swift
+(https://github.com/zhen-swift/zhen-ios), and the Zhen engine
+(https://github.com/zhen-swift/zhen-core).
+
+Licensed under the Apache License, Version 2.0. See LICENSE for the full text.
+
+────────────────────────────────────────────────────────────────────────────
+
+THIRD-PARTY COMPONENTS
+
+The app has one dependency, and the engine it depends on has one more.
+
+  zhen-core               https://github.com/zhen-swift/zhen-core
+                          Copyright 2026 Juan Carlos Estévez Rodríguez
+                          Apache License 2.0
+                          The engine. Linked as libraries (ZhenCore, ZhenScan and,
+                          through it, ZhenDarwin). On iPadOS it builds without its
+                          privileged half.
+
+  swift-argument-parser   https://github.com/apple/swift-argument-parser
+                          Copyright Apple Inc. and the Swift project authors
+                          Apache License 2.0
+                          Resolved as a dependency of zhen-core's command-line
+                          tool. Not linked into the app.
+
+Nothing else is vendored, bundled or statically linked.
+
+The colour palette and the small component set (Card, Chip, StatusDot, SignalMeter)
+follow zhen-app's, by the same author, under the same licence.
