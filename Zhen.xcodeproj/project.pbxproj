@@ -1,0 +1,970 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		003520FA3D2C8C4A5DEFDADF /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF830B864EA588304C7623B /* NetworkModel.swift */; };
+		02EDB5B435843A7A966288E4 /* RootView+DetailColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02714C1F8E6B256EEDF027FE /* RootView+DetailColumnView.swift */; };
+		03F77145691D2C084F5113EF /* DeviceDetailView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011D9C9F582BFDEB35D6B364 /* DeviceDetailView+Helpers.swift */; };
+		070FA381AA337FB4FDA06399 /* DeviceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD6330942D683BF1C0B7E0C /* DeviceDetailView.swift */; };
+		0963EF7C117B26CCF5EABECF /* DeviceItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64C8AE949E2DB94036B5E8D /* DeviceItemTests.swift */; };
+		0982773E32753A3997EC1BD7 /* ZhenCore in Frameworks */ = {isa = PBXBuildFile; productRef = EB06CA7DC335042FBC77A530 /* ZhenCore */; };
+		0A184307321C552B2D2E1401 /* PortScanSheetView+ChoiceSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8683972AAA7195E3CB91D012 /* PortScanSheetView+ChoiceSectionView.swift */; };
+		0D9A32D6BE5133D6B991BA15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6131F6B429CA419C4044C59F /* Assets.xcassets */; };
+		10F09023BAC6EDB72F6A0657 /* AppEnvironmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B400BF60DF22B7455D671 /* AppEnvironmentTests.swift */; };
+		1181BD13EAA8E7E109BDB0B6 /* StatusDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C30177888B69D03C095F6B /* StatusDot.swift */; };
+		24A734D31C5AF124D96F4A2B /* PortScanSheetView+PresetRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F3341328F6D1E4E11AD30 /* PortScanSheetView+PresetRowView.swift */; };
+		28DD0868BD9B3F6603E066D0 /* DevicesView+RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3383F1BD64EEDDE62A2F186E /* DevicesView+RowView.swift */; };
+		2A790E3AEFF420F48575353E /* ScanRunning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11893B7125C0E0F6DAA0742B /* ScanRunning.swift */; };
+		2D94FA15EBCB3A0C846A53F8 /* PortScanSheetView+TargetsSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397ACF29A61DFFD6013B5CA1 /* PortScanSheetView+TargetsSectionView.swift */; };
+		3BECB346C3667C173847D38A /* ZhenScan in Frameworks */ = {isa = PBXBuildFile; productRef = D974DC24D6E18A90F76CDB65 /* ZhenScan */; };
+		3F4612E5F07287D3BBBB594C /* FixtureScanRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E446C4B7D9A45548FB7F561B /* FixtureScanRunner.swift */; };
+		406FAF10AB7804D1484BEC63 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453F05C6A052D53137AEC78B /* CornerRadius.swift */; };
+		4B1DCB9C3DE4EDE9DB59A00A /* DeviceDetailView+NetworkCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D407BAC67B947785C7A5B09F /* DeviceDetailView+NetworkCardView.swift */; };
+		4C32A7A84EE8B22B0CA39ED6 /* DeviceDetailView+KeyValueRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E3099BD7F3507C50203F31 /* DeviceDetailView+KeyValueRowView.swift */; };
+		4C6B13831B82F03C08283701 /* PortScanSheetView+ChoiceFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E49A5534855ED21814EC5D /* PortScanSheetView+ChoiceFooterView.swift */; };
+		4FC07C205B7950E5CDE21943 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B5F74F1395CE1D4EB378F521 /* Localizable.xcstrings */; };
+		55C16E7447B432B9BCBE964B /* DevicesView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC67840999D85D0031FA1764 /* DevicesView+Helpers.swift */; };
+		62B90E68329A985DEBAB28F5 /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88F559FEDC46DA2C3BE39F2 /* DevicesView.swift */; };
+		665F6AFA9FB99C8881AF9680 /* PortChoiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F3275FCB36356DA9836FF /* PortChoiceTests.swift */; };
+		66632F4DD4E789C475B2AAA3 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBB9326D4B86C248575509F /* AppEnvironment.swift */; };
+		71F2C9E06A6D1E7CD5BD2752 /* DevicesView+NotesSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D483BBF17CEF29B511E6150 /* DevicesView+NotesSectionView.swift */; };
+		78DC38BAABF631251DD874E4 /* PortScanSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B23C2C87097243535A82859 /* PortScanSheetView.swift */; };
+		877F5F6B784C913892AE2B57 /* RootView+Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0117864A42CCE8A23B9CCC2 /* RootView+Sheet.swift */; };
+		8A7A3A225AA4EBD6D1846F70 /* PortScanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFBC95ECFB38E75429095C /* PortScanTests.swift */; };
+		8BA166C552509A6EE399B488 /* FixtureNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B2E8C243148707DC038AEB /* FixtureNetwork.swift */; };
+		8D0842DE4841B1A36395CBC5 /* showcase-network.json in Resources */ = {isa = PBXBuildFile; fileRef = F0C1C886018F1E89BAD31603 /* showcase-network.json */; };
+		8D9BB7D07735AB3E630CD2D5 /* PortsCardView+RunningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E2E9523FF2854549514CF /* PortsCardView+RunningView.swift */; };
+		90C4BE2DCBD3F49A07D3B714 /* CapabilityProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D12A44CACE6D44FB256E276 /* CapabilityProbe.swift */; };
+		90FAA2F33C64930CDF85561C /* SignalMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97592AFED74A568DD937D0D1 /* SignalMeter.swift */; };
+		9120D8BC269D79405F57840A /* IconSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FC5AC583F29A927819370 /* IconSize.swift */; };
+		928136D0BDA8B75C7C529F84 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BD50406C38F4E7501F4170 /* RootView.swift */; };
+		934D4125B0F1D14F0D48C56F /* ZhenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FB2AFC5A1F91624657F48 /* ZhenApp.swift */; };
+		951602CA315E980197B480B7 /* PortScanSheetView+EstimateSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331B429DC734E31FEA270428 /* PortScanSheetView+EstimateSectionView.swift */; };
+		999F916F71ADDCCB83D887D0 /* DeviceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C335FB549133C7319EE695 /* DeviceItem.swift */; };
+		99B892C541A28835AB0D33B4 /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAC1DADD1BE9ED4E493DF1B /* Spacing.swift */; };
+		9A18D42F4B0426D8018D2BE7 /* SystemSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B16B1B4ABCF4DB0AFDD819C /* SystemSettings.swift */; };
+		9B52F6E3B0728CA65CE0EF83 /* DevicesView+EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB525B5D4536C0BA4294EE /* DevicesView+EmptyStateView.swift */; };
+		9C284803F58FA9227DA72A0B /* PortsCardView+SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0763EAE58989305149AEB99C /* PortsCardView+SummaryView.swift */; };
+		9C404C6C8DF189B2A9A4CD95 /* FixtureNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AEFC44C61E2B84CCF90731 /* FixtureNetworkTests.swift */; };
+		A3B4A15B027D1AEE0CD12635 /* IdleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECCD68CF70165A9D548D81F /* IdleTimer.swift */; };
+		A4370E58A1AD6AB5E608862F /* DiagnosticsView+CheckRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0352BACE117F2EF8A4CB144A /* DiagnosticsView+CheckRowView.swift */; };
+		A5B783C42D1CC6BDC539DE86 /* Robots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D4BED6EE0921CC8321396 /* Robots.swift */; };
+		A5BD0249CAC57243AFA2F62C /* PortsCardView+OthersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7CBCB958A1150C6BF89B20 /* PortsCardView+OthersView.swift */; };
+		A669C1D3590E094A4DE64250 /* PortScanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CDF618164074B2ABEE6D26 /* PortScanUITests.swift */; };
+		A9D81182FBE422652B89E4BB /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D098D944D2B4BF4342DCD4C1 /* Card.swift */; };
+		AB635CF585AECC6CA1F33FE5 /* PortsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1C4AB0998BA6AEE4370716 /* PortsCardView.swift */; };
+		B38B0D8AC95763B38A11FE11 /* DevicesView+ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26921998DE8EADF904E4087 /* DevicesView+ToolbarView.swift */; };
+		B7DF880B3BB20B56414ACBB6 /* DeviceDetailView+HeaderCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD472DFC69E6924B740371 /* DeviceDetailView+HeaderCardView.swift */; };
+		BA26F21E8A14C52BC54F2CD1 /* StatusDot+Tone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD039D5B7C6EC38D5A8072A /* StatusDot+Tone.swift */; };
+		C0193F2669AE565389FB8949 /* PortsCardView+PortRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73B9EEAECEEFB302DBB7D1 /* PortsCardView+PortRowView.swift */; };
+		C6711F78A7A1D4F20C611328 /* PortScan.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A209314B7BA420914E06C /* PortScan.swift */; };
+		CABF0D0D52E1F675E60A2AD9 /* DiagnosticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AA6A075E72FD07CA93E841 /* DiagnosticsView.swift */; };
+		DDAFAEFB161B29B4E4CCEBD4 /* DeviceDetailView+KnownByCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18BE9CC41C36963A97B9EC /* DeviceDetailView+KnownByCardView.swift */; };
+		DE243FA86DFABB021DB318C1 /* PortChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D381F4E56B14CFBF659E8BF5 /* PortChoice.swift */; };
+		DE2D8204E0E45C3719733C3A /* PortScanSheetView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6DACB8B1080360FCAAE959 /* PortScanSheetView+Helpers.swift */; };
+		E15646E8704BF0D0277F6CFC /* LiveScanRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0329F5101C315A135AE6C8 /* LiveScanRunner.swift */; };
+		E498C52AC5ACD899A35C8BB1 /* MultiSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CCB9858426C2ADC1F0E0D0 /* MultiSelectionView.swift */; };
+		EDA4DE2F925376A3DF3624F0 /* DevicesView+ScanProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796EA83B142A3F4E4758428D /* DevicesView+ScanProgressView.swift */; };
+		F1D034D39F25E8C668C2EB03 /* NetworkModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4075C9CEBE60AAE40A2 /* NetworkModelTests.swift */; };
+		F1E8F46E12F34F64B99495DA /* ScanHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260FB4D2D7D3F71D7709B745 /* ScanHost.swift */; };
+		F25F42366E3B234C949EEA84 /* BorderWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED93DD290ADD8873DD8B6C03 /* BorderWidth.swift */; };
+		F714543DF804096E949AE693 /* PortsCardView+PortListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71D07CBD3A5AE6C8CB8DEE6 /* PortsCardView+PortListView.swift */; };
+		F7AA2570E4AC5B658439A124 /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97905B2BF773FF2010533F4 /* PreviewContainer.swift */; };
+		FB5D39E73942367C8A676BEC /* Chip+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B6B2432DE138B6F1159ABF /* Chip+Style.swift */; };
+		FE5B014E707612E6E44747D7 /* Chip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C45D14F90BFF24517404EF /* Chip.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCE1DB93D71EEF496EF51B3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 696750B5F9B6CD5F2839C611 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B1142011842182A1D3E9F3A;
+			remoteInfo = Zhen;
+		};
+		F3B524BBB399B1A358E93B2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 696750B5F9B6CD5F2839C611 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B1142011842182A1D3E9F3A;
+			remoteInfo = Zhen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		011D9C9F582BFDEB35D6B364 /* DeviceDetailView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceDetailView+Helpers.swift"; sourceTree = "<group>"; };
+		02714C1F8E6B256EEDF027FE /* RootView+DetailColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootView+DetailColumnView.swift"; sourceTree = "<group>"; };
+		0352BACE117F2EF8A4CB144A /* DiagnosticsView+CheckRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiagnosticsView+CheckRowView.swift"; sourceTree = "<group>"; };
+		0763EAE58989305149AEB99C /* PortsCardView+SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortsCardView+SummaryView.swift"; sourceTree = "<group>"; };
+		11893B7125C0E0F6DAA0742B /* ScanRunning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanRunning.swift; sourceTree = "<group>"; };
+		1A1C4AB0998BA6AEE4370716 /* PortsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortsCardView.swift; sourceTree = "<group>"; };
+		1B16B1B4ABCF4DB0AFDD819C /* SystemSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSettings.swift; sourceTree = "<group>"; };
+		1B622F47298F43BF657548BC /* ZhenTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ZhenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D483BBF17CEF29B511E6150 /* DevicesView+NotesSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DevicesView+NotesSectionView.swift"; sourceTree = "<group>"; };
+		22BD50406C38F4E7501F4170 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		260FB4D2D7D3F71D7709B745 /* ScanHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanHost.swift; sourceTree = "<group>"; };
+		2BD039D5B7C6EC38D5A8072A /* StatusDot+Tone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StatusDot+Tone.swift"; sourceTree = "<group>"; };
+		30E49A5534855ED21814EC5D /* PortScanSheetView+ChoiceFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortScanSheetView+ChoiceFooterView.swift"; sourceTree = "<group>"; };
+		331B429DC734E31FEA270428 /* PortScanSheetView+EstimateSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortScanSheetView+EstimateSectionView.swift"; sourceTree = "<group>"; };
+		3383F1BD64EEDDE62A2F186E /* DevicesView+RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DevicesView+RowView.swift"; sourceTree = "<group>"; };
+		397ACF29A61DFFD6013B5CA1 /* PortScanSheetView+TargetsSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortScanSheetView+TargetsSectionView.swift"; sourceTree = "<group>"; };
+		3DF830B864EA588304C7623B /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		411E2E9523FF2854549514CF /* PortsCardView+RunningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortsCardView+RunningView.swift"; sourceTree = "<group>"; };
+		453F05C6A052D53137AEC78B /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
+		48E3099BD7F3507C50203F31 /* DeviceDetailView+KeyValueRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceDetailView+KeyValueRowView.swift"; sourceTree = "<group>"; };
+		4DAFBC95ECFB38E75429095C /* PortScanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortScanTests.swift; sourceTree = "<group>"; };
+		4ECCD68CF70165A9D548D81F /* IdleTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdleTimer.swift; sourceTree = "<group>"; };
+		4FEB525B5D4536C0BA4294EE /* DevicesView+EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DevicesView+EmptyStateView.swift"; sourceTree = "<group>"; };
+		525F3341328F6D1E4E11AD30 /* PortScanSheetView+PresetRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortScanSheetView+PresetRowView.swift"; sourceTree = "<group>"; };
+		54C30177888B69D03C095F6B /* StatusDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusDot.swift; sourceTree = "<group>"; };
+		59CDF618164074B2ABEE6D26 /* PortScanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortScanUITests.swift; sourceTree = "<group>"; };
+		6131F6B429CA419C4044C59F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61B6B2432DE138B6F1159ABF /* Chip+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chip+Style.swift"; sourceTree = "<group>"; };
+		68AA6A075E72FD07CA93E841 /* DiagnosticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticsView.swift; sourceTree = "<group>"; };
+		6B6DACB8B1080360FCAAE959 /* PortScanSheetView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortScanSheetView+Helpers.swift"; sourceTree = "<group>"; };
+		6C1D4BED6EE0921CC8321396 /* Robots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Robots.swift; sourceTree = "<group>"; };
+		6D12A44CACE6D44FB256E276 /* CapabilityProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapabilityProbe.swift; sourceTree = "<group>"; };
+		6DAC1DADD1BE9ED4E493DF1B /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
+		796EA83B142A3F4E4758428D /* DevicesView+ScanProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DevicesView+ScanProgressView.swift"; sourceTree = "<group>"; };
+		7CBB9326D4B86C248575509F /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		8683972AAA7195E3CB91D012 /* PortScanSheetView+ChoiceSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortScanSheetView+ChoiceSectionView.swift"; sourceTree = "<group>"; };
+		898FC5AC583F29A927819370 /* IconSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconSize.swift; sourceTree = "<group>"; };
+		93B0FBC1DE70DDDF484022B0 /* Zhen.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Zhen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97592AFED74A568DD937D0D1 /* SignalMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalMeter.swift; sourceTree = "<group>"; };
+		9B23C2C87097243535A82859 /* PortScanSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortScanSheetView.swift; sourceTree = "<group>"; };
+		9E18BE9CC41C36963A97B9EC /* DeviceDetailView+KnownByCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceDetailView+KnownByCardView.swift"; sourceTree = "<group>"; };
+		A3B2E8C243148707DC038AEB /* FixtureNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureNetwork.swift; sourceTree = "<group>"; };
+		A3C335FB549133C7319EE695 /* DeviceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceItem.swift; sourceTree = "<group>"; };
+		A5CCB9858426C2ADC1F0E0D0 /* MultiSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectionView.swift; sourceTree = "<group>"; };
+		A73D6E7E7C836CCA50593678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AA3FB2AFC5A1F91624657F48 /* ZhenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhenApp.swift; sourceTree = "<group>"; };
+		B5F74F1395CE1D4EB378F521 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		BB0329F5101C315A135AE6C8 /* LiveScanRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveScanRunner.swift; sourceTree = "<group>"; };
+		C01A209314B7BA420914E06C /* PortScan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortScan.swift; sourceTree = "<group>"; };
+		C1C45D14F90BFF24517404EF /* Chip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chip.swift; sourceTree = "<group>"; };
+		C6AEFC44C61E2B84CCF90731 /* FixtureNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureNetworkTests.swift; sourceTree = "<group>"; };
+		C71D07CBD3A5AE6C8CB8DEE6 /* PortsCardView+PortListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortsCardView+PortListView.swift"; sourceTree = "<group>"; };
+		C88F559FEDC46DA2C3BE39F2 /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
+		CBD6330942D683BF1C0B7E0C /* DeviceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailView.swift; sourceTree = "<group>"; };
+		CD01B87A3D6A4F60F2DCF6BE /* ZhenUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ZhenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD73B9EEAECEEFB302DBB7D1 /* PortsCardView+PortRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortsCardView+PortRowView.swift"; sourceTree = "<group>"; };
+		D098D944D2B4BF4342DCD4C1 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		D381F4E56B14CFBF659E8BF5 /* PortChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortChoice.swift; sourceTree = "<group>"; };
+		D407BAC67B947785C7A5B09F /* DeviceDetailView+NetworkCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceDetailView+NetworkCardView.swift"; sourceTree = "<group>"; };
+		DC67840999D85D0031FA1764 /* DevicesView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DevicesView+Helpers.swift"; sourceTree = "<group>"; };
+		DCAD472DFC69E6924B740371 /* DeviceDetailView+HeaderCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceDetailView+HeaderCardView.swift"; sourceTree = "<group>"; };
+		DD9F3275FCB36356DA9836FF /* PortChoiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortChoiceTests.swift; sourceTree = "<group>"; };
+		E0117864A42CCE8A23B9CCC2 /* RootView+Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootView+Sheet.swift"; sourceTree = "<group>"; };
+		E446C4B7D9A45548FB7F561B /* FixtureScanRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureScanRunner.swift; sourceTree = "<group>"; };
+		ED93DD290ADD8873DD8B6C03 /* BorderWidth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderWidth.swift; sourceTree = "<group>"; };
+		F0C1C886018F1E89BAD31603 /* showcase-network.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "showcase-network.json"; sourceTree = "<group>"; };
+		F26921998DE8EADF904E4087 /* DevicesView+ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DevicesView+ToolbarView.swift"; sourceTree = "<group>"; };
+		F32BE4075C9CEBE60AAE40A2 /* NetworkModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModelTests.swift; sourceTree = "<group>"; };
+		F64C8AE949E2DB94036B5E8D /* DeviceItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceItemTests.swift; sourceTree = "<group>"; };
+		F97905B2BF773FF2010533F4 /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
+		FC1B400BF60DF22B7455D671 /* AppEnvironmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironmentTests.swift; sourceTree = "<group>"; };
+		FC7CBCB958A1150C6BF89B20 /* PortsCardView+OthersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortsCardView+OthersView.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81BB22F09259827333FC6E9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0982773E32753A3997EC1BD7 /* ZhenCore in Frameworks */,
+				3BECB346C3667C173847D38A /* ZhenScan in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		114780DD17E80623C04B696A /* DevicesView */ = {
+			isa = PBXGroup;
+			children = (
+				C88F559FEDC46DA2C3BE39F2 /* DevicesView.swift */,
+				4FEB525B5D4536C0BA4294EE /* DevicesView+EmptyStateView.swift */,
+				DC67840999D85D0031FA1764 /* DevicesView+Helpers.swift */,
+				1D483BBF17CEF29B511E6150 /* DevicesView+NotesSectionView.swift */,
+				3383F1BD64EEDDE62A2F186E /* DevicesView+RowView.swift */,
+				796EA83B142A3F4E4758428D /* DevicesView+ScanProgressView.swift */,
+				F26921998DE8EADF904E4087 /* DevicesView+ToolbarView.swift */,
+			);
+			path = DevicesView;
+			sourceTree = "<group>";
+		};
+		1B41EC652B6105AC7B233BCD /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				A3B2E8C243148707DC038AEB /* FixtureNetwork.swift */,
+				F97905B2BF773FF2010533F4 /* PreviewContainer.swift */,
+				F0C1C886018F1E89BAD31603 /* showcase-network.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		1CB36D3CEB548353A1EC41C9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7CBB9326D4B86C248575509F /* AppEnvironment.swift */,
+				260FB4D2D7D3F71D7709B745 /* ScanHost.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3E858E1486211A4D0BB00E14 /* Scanning */ = {
+			isa = PBXGroup;
+			children = (
+				E446C4B7D9A45548FB7F561B /* FixtureScanRunner.swift */,
+				BB0329F5101C315A135AE6C8 /* LiveScanRunner.swift */,
+				11893B7125C0E0F6DAA0742B /* ScanRunning.swift */,
+			);
+			path = Scanning;
+			sourceTree = "<group>";
+		};
+		42118EBD8F8672088CB441C7 /* DeviceDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6330942D683BF1C0B7E0C /* DeviceDetailView.swift */,
+				DCAD472DFC69E6924B740371 /* DeviceDetailView+HeaderCardView.swift */,
+				011D9C9F582BFDEB35D6B364 /* DeviceDetailView+Helpers.swift */,
+				48E3099BD7F3507C50203F31 /* DeviceDetailView+KeyValueRowView.swift */,
+				9E18BE9CC41C36963A97B9EC /* DeviceDetailView+KnownByCardView.swift */,
+				D407BAC67B947785C7A5B09F /* DeviceDetailView+NetworkCardView.swift */,
+				434885F5C7F9699054D96A6D /* PortsCardView */,
+			);
+			path = DeviceDetailView;
+			sourceTree = "<group>";
+		};
+		434885F5C7F9699054D96A6D /* PortsCardView */ = {
+			isa = PBXGroup;
+			children = (
+				1A1C4AB0998BA6AEE4370716 /* PortsCardView.swift */,
+				FC7CBCB958A1150C6BF89B20 /* PortsCardView+OthersView.swift */,
+				C71D07CBD3A5AE6C8CB8DEE6 /* PortsCardView+PortListView.swift */,
+				CD73B9EEAECEEFB302DBB7D1 /* PortsCardView+PortRowView.swift */,
+				411E2E9523FF2854549514CF /* PortsCardView+RunningView.swift */,
+				0763EAE58989305149AEB99C /* PortsCardView+SummaryView.swift */,
+			);
+			path = PortsCardView;
+			sourceTree = "<group>";
+		};
+		45FFB604BA154004763C9761 /* ZhenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59CDF618164074B2ABEE6D26 /* PortScanUITests.swift */,
+				6C1D4BED6EE0921CC8321396 /* Robots.swift */,
+			);
+			path = ZhenUITests;
+			sourceTree = "<group>";
+		};
+		4B53EF2314D22C6D1BE9B674 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				42118EBD8F8672088CB441C7 /* DeviceDetailView */,
+				114780DD17E80623C04B696A /* DevicesView */,
+				A386F2C5B3658FC364162245 /* DiagnosticsView */,
+				91C6FB15FFB4BECA776E2DEB /* MultiSelectionView */,
+				D92E662D4A191C4B278F9B89 /* PortScanSheetView */,
+				D228A73C11AFD244AEF45377 /* RootView */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		7341FA69C86E2B6EE963DADA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D098D944D2B4BF4342DCD4C1 /* Card.swift */,
+				C1C45D14F90BFF24517404EF /* Chip.swift */,
+				61B6B2432DE138B6F1159ABF /* Chip+Style.swift */,
+				97592AFED74A568DD937D0D1 /* SignalMeter.swift */,
+				54C30177888B69D03C095F6B /* StatusDot.swift */,
+				2BD039D5B7C6EC38D5A8072A /* StatusDot+Tone.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		87023B1BC181F3F93B3817CA = {
+			isa = PBXGroup;
+			children = (
+				E302E29D57B417809BE0CC54 /* Zhen */,
+				D3EEECEC2E143F39E239156B /* ZhenTests */,
+				45FFB604BA154004763C9761 /* ZhenUITests */,
+				BC20AE5FA5304982F43E9792 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8D8E80D9E543EBE7772847AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3C335FB549133C7319EE695 /* DeviceItem.swift */,
+				3DF830B864EA588304C7623B /* NetworkModel.swift */,
+				D381F4E56B14CFBF659E8BF5 /* PortChoice.swift */,
+				C01A209314B7BA420914E06C /* PortScan.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		91C6FB15FFB4BECA776E2DEB /* MultiSelectionView */ = {
+			isa = PBXGroup;
+			children = (
+				A5CCB9858426C2ADC1F0E0D0 /* MultiSelectionView.swift */,
+			);
+			path = MultiSelectionView;
+			sourceTree = "<group>";
+		};
+		A386F2C5B3658FC364162245 /* DiagnosticsView */ = {
+			isa = PBXGroup;
+			children = (
+				68AA6A075E72FD07CA93E841 /* DiagnosticsView.swift */,
+				0352BACE117F2EF8A4CB144A /* DiagnosticsView+CheckRowView.swift */,
+			);
+			path = DiagnosticsView;
+			sourceTree = "<group>";
+		};
+		BC20AE5FA5304982F43E9792 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93B0FBC1DE70DDDF484022B0 /* Zhen.app */,
+				1B622F47298F43BF657548BC /* ZhenTests.xctest */,
+				CD01B87A3D6A4F60F2DCF6BE /* ZhenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE44FAF30DE55043F1452481 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				ED93DD290ADD8873DD8B6C03 /* BorderWidth.swift */,
+				453F05C6A052D53137AEC78B /* CornerRadius.swift */,
+				898FC5AC583F29A927819370 /* IconSize.swift */,
+				6DAC1DADD1BE9ED4E493DF1B /* Spacing.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D228A73C11AFD244AEF45377 /* RootView */ = {
+			isa = PBXGroup;
+			children = (
+				22BD50406C38F4E7501F4170 /* RootView.swift */,
+				02714C1F8E6B256EEDF027FE /* RootView+DetailColumnView.swift */,
+				E0117864A42CCE8A23B9CCC2 /* RootView+Sheet.swift */,
+			);
+			path = RootView;
+			sourceTree = "<group>";
+		};
+		D3EEECEC2E143F39E239156B /* ZhenTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC1B400BF60DF22B7455D671 /* AppEnvironmentTests.swift */,
+				F64C8AE949E2DB94036B5E8D /* DeviceItemTests.swift */,
+				C6AEFC44C61E2B84CCF90731 /* FixtureNetworkTests.swift */,
+				F32BE4075C9CEBE60AAE40A2 /* NetworkModelTests.swift */,
+				DD9F3275FCB36356DA9836FF /* PortChoiceTests.swift */,
+				4DAFBC95ECFB38E75429095C /* PortScanTests.swift */,
+			);
+			path = ZhenTests;
+			sourceTree = "<group>";
+		};
+		D92E662D4A191C4B278F9B89 /* PortScanSheetView */ = {
+			isa = PBXGroup;
+			children = (
+				9B23C2C87097243535A82859 /* PortScanSheetView.swift */,
+				30E49A5534855ED21814EC5D /* PortScanSheetView+ChoiceFooterView.swift */,
+				8683972AAA7195E3CB91D012 /* PortScanSheetView+ChoiceSectionView.swift */,
+				331B429DC734E31FEA270428 /* PortScanSheetView+EstimateSectionView.swift */,
+				6B6DACB8B1080360FCAAE959 /* PortScanSheetView+Helpers.swift */,
+				525F3341328F6D1E4E11AD30 /* PortScanSheetView+PresetRowView.swift */,
+				397ACF29A61DFFD6013B5CA1 /* PortScanSheetView+TargetsSectionView.swift */,
+			);
+			path = PortScanSheetView;
+			sourceTree = "<group>";
+		};
+		E302E29D57B417809BE0CC54 /* Zhen */ = {
+			isa = PBXGroup;
+			children = (
+				6131F6B429CA419C4044C59F /* Assets.xcassets */,
+				A73D6E7E7C836CCA50593678 /* Info.plist */,
+				B5F74F1395CE1D4EB378F521 /* Localizable.xcstrings */,
+				AA3FB2AFC5A1F91624657F48 /* ZhenApp.swift */,
+				1CB36D3CEB548353A1EC41C9 /* App */,
+				7341FA69C86E2B6EE963DADA /* Components */,
+				4B53EF2314D22C6D1BE9B674 /* Features */,
+				1B41EC652B6105AC7B233BCD /* Fixtures */,
+				8D8E80D9E543EBE7772847AE /* Model */,
+				F0BE3F1D59884F7FA9B2AF8D /* Platform */,
+				3E858E1486211A4D0BB00E14 /* Scanning */,
+				CE44FAF30DE55043F1452481 /* Utilities */,
+			);
+			path = Zhen;
+			sourceTree = "<group>";
+		};
+		F0BE3F1D59884F7FA9B2AF8D /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				6D12A44CACE6D44FB256E276 /* CapabilityProbe.swift */,
+				4ECCD68CF70165A9D548D81F /* IdleTimer.swift */,
+				1B16B1B4ABCF4DB0AFDD819C /* SystemSettings.swift */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B1142011842182A1D3E9F3A /* Zhen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15AACBDAE282F43BC75D9BEA /* Build configuration list for PBXNativeTarget "Zhen" */;
+			buildPhases = (
+				4E31CB3135D6D96D32AEE50A /* Sources */,
+				1B4E93D51F93E11ABFE8FD87 /* Resources */,
+				81BB22F09259827333FC6E9D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zhen;
+			packageProductDependencies = (
+				EB06CA7DC335042FBC77A530 /* ZhenCore */,
+				D974DC24D6E18A90F76CDB65 /* ZhenScan */,
+			);
+			productName = Zhen;
+			productReference = 93B0FBC1DE70DDDF484022B0 /* Zhen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF2233C5D9897FC918467E12 /* ZhenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9E1A19602A26E522B6F726A /* Build configuration list for PBXNativeTarget "ZhenUITests" */;
+			buildPhases = (
+				25D138F3ED2E1FE806456CCE /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A599FB034CBD7A037E99E39E /* PBXTargetDependency */,
+			);
+			name = ZhenUITests;
+			packageProductDependencies = (
+			);
+			productName = ZhenUITests;
+			productReference = CD01B87A3D6A4F60F2DCF6BE /* ZhenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		DA67BACF20B65F7B3391F770 /* ZhenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A433A4F4BF3E109CDB2BA9A3 /* Build configuration list for PBXNativeTarget "ZhenTests" */;
+			buildPhases = (
+				E4024E6E09E24DE1B45F7520 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB01ED541B0162BE0C4F1FF3 /* PBXTargetDependency */,
+			);
+			name = ZhenTests;
+			packageProductDependencies = (
+			);
+			productName = ZhenTests;
+			productReference = 1B622F47298F43BF657548BC /* ZhenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		696750B5F9B6CD5F2839C611 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					3B1142011842182A1D3E9F3A = {
+						DevelopmentTeam = S8662L649U;
+						ProvisioningStyle = Automatic;
+					};
+					AF2233C5D9897FC918467E12 = {
+						DevelopmentTeam = S8662L649U;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3B1142011842182A1D3E9F3A;
+					};
+					DA67BACF20B65F7B3391F770 = {
+						DevelopmentTeam = S8662L649U;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8940CC16D1561830D27050E6 /* Build configuration list for PBXProject "Zhen" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 87023B1BC181F3F93B3817CA;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5B22DF8AD60FF5EDF425C0EC /* XCRemoteSwiftPackageReference "zhen-core" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BC20AE5FA5304982F43E9792 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B1142011842182A1D3E9F3A /* Zhen */,
+				DA67BACF20B65F7B3391F770 /* ZhenTests */,
+				AF2233C5D9897FC918467E12 /* ZhenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B4E93D51F93E11ABFE8FD87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D9A32D6BE5133D6B991BA15 /* Assets.xcassets in Resources */,
+				4FC07C205B7950E5CDE21943 /* Localizable.xcstrings in Resources */,
+				8D0842DE4841B1A36395CBC5 /* showcase-network.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25D138F3ED2E1FE806456CCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A669C1D3590E094A4DE64250 /* PortScanUITests.swift in Sources */,
+				A5B783C42D1CC6BDC539DE86 /* Robots.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E31CB3135D6D96D32AEE50A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66632F4DD4E789C475B2AAA3 /* AppEnvironment.swift in Sources */,
+				F25F42366E3B234C949EEA84 /* BorderWidth.swift in Sources */,
+				90C4BE2DCBD3F49A07D3B714 /* CapabilityProbe.swift in Sources */,
+				A9D81182FBE422652B89E4BB /* Card.swift in Sources */,
+				FB5D39E73942367C8A676BEC /* Chip+Style.swift in Sources */,
+				FE5B014E707612E6E44747D7 /* Chip.swift in Sources */,
+				406FAF10AB7804D1484BEC63 /* CornerRadius.swift in Sources */,
+				B7DF880B3BB20B56414ACBB6 /* DeviceDetailView+HeaderCardView.swift in Sources */,
+				03F77145691D2C084F5113EF /* DeviceDetailView+Helpers.swift in Sources */,
+				4C32A7A84EE8B22B0CA39ED6 /* DeviceDetailView+KeyValueRowView.swift in Sources */,
+				DDAFAEFB161B29B4E4CCEBD4 /* DeviceDetailView+KnownByCardView.swift in Sources */,
+				4B1DCB9C3DE4EDE9DB59A00A /* DeviceDetailView+NetworkCardView.swift in Sources */,
+				070FA381AA337FB4FDA06399 /* DeviceDetailView.swift in Sources */,
+				999F916F71ADDCCB83D887D0 /* DeviceItem.swift in Sources */,
+				9B52F6E3B0728CA65CE0EF83 /* DevicesView+EmptyStateView.swift in Sources */,
+				55C16E7447B432B9BCBE964B /* DevicesView+Helpers.swift in Sources */,
+				71F2C9E06A6D1E7CD5BD2752 /* DevicesView+NotesSectionView.swift in Sources */,
+				28DD0868BD9B3F6603E066D0 /* DevicesView+RowView.swift in Sources */,
+				EDA4DE2F925376A3DF3624F0 /* DevicesView+ScanProgressView.swift in Sources */,
+				B38B0D8AC95763B38A11FE11 /* DevicesView+ToolbarView.swift in Sources */,
+				62B90E68329A985DEBAB28F5 /* DevicesView.swift in Sources */,
+				A4370E58A1AD6AB5E608862F /* DiagnosticsView+CheckRowView.swift in Sources */,
+				CABF0D0D52E1F675E60A2AD9 /* DiagnosticsView.swift in Sources */,
+				8BA166C552509A6EE399B488 /* FixtureNetwork.swift in Sources */,
+				3F4612E5F07287D3BBBB594C /* FixtureScanRunner.swift in Sources */,
+				9120D8BC269D79405F57840A /* IconSize.swift in Sources */,
+				A3B4A15B027D1AEE0CD12635 /* IdleTimer.swift in Sources */,
+				E15646E8704BF0D0277F6CFC /* LiveScanRunner.swift in Sources */,
+				E498C52AC5ACD899A35C8BB1 /* MultiSelectionView.swift in Sources */,
+				003520FA3D2C8C4A5DEFDADF /* NetworkModel.swift in Sources */,
+				DE243FA86DFABB021DB318C1 /* PortChoice.swift in Sources */,
+				C6711F78A7A1D4F20C611328 /* PortScan.swift in Sources */,
+				4C6B13831B82F03C08283701 /* PortScanSheetView+ChoiceFooterView.swift in Sources */,
+				0A184307321C552B2D2E1401 /* PortScanSheetView+ChoiceSectionView.swift in Sources */,
+				951602CA315E980197B480B7 /* PortScanSheetView+EstimateSectionView.swift in Sources */,
+				DE2D8204E0E45C3719733C3A /* PortScanSheetView+Helpers.swift in Sources */,
+				24A734D31C5AF124D96F4A2B /* PortScanSheetView+PresetRowView.swift in Sources */,
+				2D94FA15EBCB3A0C846A53F8 /* PortScanSheetView+TargetsSectionView.swift in Sources */,
+				78DC38BAABF631251DD874E4 /* PortScanSheetView.swift in Sources */,
+				A5BD0249CAC57243AFA2F62C /* PortsCardView+OthersView.swift in Sources */,
+				F714543DF804096E949AE693 /* PortsCardView+PortListView.swift in Sources */,
+				C0193F2669AE565389FB8949 /* PortsCardView+PortRowView.swift in Sources */,
+				8D9BB7D07735AB3E630CD2D5 /* PortsCardView+RunningView.swift in Sources */,
+				9C284803F58FA9227DA72A0B /* PortsCardView+SummaryView.swift in Sources */,
+				AB635CF585AECC6CA1F33FE5 /* PortsCardView.swift in Sources */,
+				F7AA2570E4AC5B658439A124 /* PreviewContainer.swift in Sources */,
+				02EDB5B435843A7A966288E4 /* RootView+DetailColumnView.swift in Sources */,
+				877F5F6B784C913892AE2B57 /* RootView+Sheet.swift in Sources */,
+				928136D0BDA8B75C7C529F84 /* RootView.swift in Sources */,
+				F1E8F46E12F34F64B99495DA /* ScanHost.swift in Sources */,
+				2A790E3AEFF420F48575353E /* ScanRunning.swift in Sources */,
+				90FAA2F33C64930CDF85561C /* SignalMeter.swift in Sources */,
+				99B892C541A28835AB0D33B4 /* Spacing.swift in Sources */,
+				BA26F21E8A14C52BC54F2CD1 /* StatusDot+Tone.swift in Sources */,
+				1181BD13EAA8E7E109BDB0B6 /* StatusDot.swift in Sources */,
+				9A18D42F4B0426D8018D2BE7 /* SystemSettings.swift in Sources */,
+				934D4125B0F1D14F0D48C56F /* ZhenApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4024E6E09E24DE1B45F7520 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10F09023BAC6EDB72F6A0657 /* AppEnvironmentTests.swift in Sources */,
+				0963EF7C117B26CCF5EABECF /* DeviceItemTests.swift in Sources */,
+				9C404C6C8DF189B2A9A4CD95 /* FixtureNetworkTests.swift in Sources */,
+				F1D034D39F25E8C668C2EB03 /* NetworkModelTests.swift in Sources */,
+				665F6AFA9FB99C8881AF9680 /* PortChoiceTests.swift in Sources */,
+				8A7A3A225AA4EBD6D1846F70 /* PortScanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A599FB034CBD7A037E99E39E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B1142011842182A1D3E9F3A /* Zhen */;
+			targetProxy = BCE1DB93D71EEF496EF51B3A /* PBXContainerItemProxy */;
+		};
+		FB01ED541B0162BE0C4F1FF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B1142011842182A1D3E9F3A /* Zhen */;
+			targetProxy = F3B524BBB399B1A358E93B2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		361AC0D4D0AF2C46C0808A1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = S8662L649U;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		6785FDE23D45BA13D0C0F636 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Zhen/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Zhen;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Zhen lists the devices on your network. To find them it asks each address on this network whether anything is there, and asks the devices that answer what they are called.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jctec.zhen.ios;
+				PRODUCT_NAME = Zhen;
+				SDKROOT = iphoneos;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		741A12FC4EEF5152917A7E6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Zhen/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Zhen;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Zhen lists the devices on your network. To find them it asks each address on this network whether anything is there, and asks the devices that answer what they are called.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jctec.zhen.ios;
+				PRODUCT_NAME = Zhen;
+				SDKROOT = iphoneos;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		9BA550CA09F2AFAC5B1AF226 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jctec.zhen.ios.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				TEST_TARGET_NAME = Zhen;
+			};
+			name = Release;
+		};
+		C80C1098469E9FB69237F14C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = S8662L649U;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		C8384E6A5D605216D170808A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jctec.zhen.ios.tests;
+				SDKROOT = iphoneos;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				TARGETED_DEVICE_FAMILY = 2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zhen.app/Zhen";
+			};
+			name = Release;
+		};
+		EE067ED83FF08A20B064396D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jctec.zhen.ios.tests;
+				SDKROOT = iphoneos;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				TARGETED_DEVICE_FAMILY = 2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zhen.app/Zhen";
+			};
+			name = Debug;
+		};
+		F27D047E984FC7488B2BA4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jctec.zhen.ios.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				TEST_TARGET_NAME = Zhen;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15AACBDAE282F43BC75D9BEA /* Build configuration list for PBXNativeTarget "Zhen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6785FDE23D45BA13D0C0F636 /* Debug */,
+				741A12FC4EEF5152917A7E6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8940CC16D1561830D27050E6 /* Build configuration list for PBXProject "Zhen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C80C1098469E9FB69237F14C /* Debug */,
+				361AC0D4D0AF2C46C0808A1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A433A4F4BF3E109CDB2BA9A3 /* Build configuration list for PBXNativeTarget "ZhenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE067ED83FF08A20B064396D /* Debug */,
+				C8384E6A5D605216D170808A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F9E1A19602A26E522B6F726A /* Build configuration list for PBXNativeTarget "ZhenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F27D047E984FC7488B2BA4A6 /* Debug */,
+				9BA550CA09F2AFAC5B1AF226 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5B22DF8AD60FF5EDF425C0EC /* XCRemoteSwiftPackageReference "zhen-core" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zhen-swift/zhen-core.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D974DC24D6E18A90F76CDB65 /* ZhenScan */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B22DF8AD60FF5EDF425C0EC /* XCRemoteSwiftPackageReference "zhen-core" */;
+			productName = ZhenScan;
+		};
+		EB06CA7DC335042FBC77A530 /* ZhenCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B22DF8AD60FF5EDF425C0EC /* XCRemoteSwiftPackageReference "zhen-core" */;
+			productName = ZhenCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 696750B5F9B6CD5F2839C611 /* Project object */;
+}
