@@ -1,0 +1,115 @@
+# The source of Zhen.xcodeproj. Change this, then run Scripts/generate-project.sh and commit
+# both: the project is committed so a clone builds without XcodeGen.
+#
+# The settings follow zhen-app's (AGENTS.md: Swift 6 language mode, complete strict
+# concurrency, warnings as errors, main-actor default isolation in the app target).
+name: Zhen
+options:
+  bundleIdPrefix: com.jctec
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+  developmentLanguage: en
+  xcodeVersion: "26.0"
+
+packages:
+  zhen-core:
+    url: https://github.com/zhen-swift/zhen-core.git
+    # Up to the next minor: 0.9.x is what first builds the engine for iPadOS.
+    minorVersion: 0.9.0
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    SWIFT_TREAT_WARNINGS_AS_ERRORS: YES
+    SWIFT_APPROACHABLE_CONCURRENCY: YES
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+    STRING_CATALOG_GENERATE_SYMBOLS: YES
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    # `.textPrimary`, `.surfaceRaised`: colours are named from the asset catalog, never
+    # written inline (AGENTS.md).
+    ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: YES
+    CODE_SIGN_STYLE: Automatic
+    # zhen-app's team. A contributor selects their own in Xcode and does not commit it.
+    DEVELOPMENT_TEAM: S8662L649U
+
+targets:
+  Zhen:
+    type: application
+    platform: iOS
+    sources:
+      - path: Zhen
+    dependencies:
+      - package: zhen-core
+        product: ZhenCore
+      - package: zhen-core
+        product: ZhenScan
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.jctec.zhen.ios
+        PRODUCT_NAME: Zhen
+        MARKETING_VERSION: 0.1.0
+        CURRENT_PROJECT_VERSION: 1
+        # iPad only. The layout adapts by size class, so an iPhone is a setting away,
+        # but nobody has seen it run there.
+        TARGETED_DEVICE_FAMILY: "2"
+        SWIFT_DEFAULT_ACTOR_ISOLATION: MainActor
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        GENERATE_INFOPLIST_FILE: YES
+        # Only NSBonjourServices, which a build setting cannot express (an array).
+        # Scripts/generate-bonjour-services.sh writes it; InfoPlistTests pins it.
+        INFOPLIST_FILE: Zhen/Info.plist
+        INFOPLIST_KEY_CFBundleDisplayName: Zhen
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
+        INFOPLIST_KEY_NSLocalNetworkUsageDescription: >-
+          Zhen lists the devices on your network. To find them it asks each address on
+          this network whether anything is there, and asks the devices that answer what
+          they are called.
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: >-
+          UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown
+          UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+
+  ZhenTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: ZhenTests
+    dependencies:
+      - target: Zhen
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.jctec.zhen.ios.tests
+        TARGETED_DEVICE_FAMILY: "2"
+        SWIFT_DEFAULT_ACTOR_ISOLATION: MainActor
+        GENERATE_INFOPLIST_FILE: YES
+
+  ZhenUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: ZhenUITests
+    dependencies:
+      - target: Zhen
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.jctec.zhen.ios.uitests
+        TARGETED_DEVICE_FAMILY: "2"
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_TARGET_NAME: Zhen
+
+schemes:
+  Zhen:
+    build:
+      targets:
+        Zhen: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - ZhenTests
+        - ZhenUITests

@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: Generated files are current
+    runs-on: macos-26
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - name: The string catalog matches Scripts/strings.py
+        run: python3 -I Scripts/strings.py --check
+
+  unit:
+    name: Build and unit tests on an iPad simulator
+    runs-on: macos-26
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v7
+      - name: Pick an iPad simulator
+        id: ipad
+        run: |
+          set -euo pipefail
+          udid=$(xcrun simctl list devices available -j \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin)["devices"]; print(next(x["udid"] for r,v in d.items() if "iOS" in r for x in v if x["name"].startswith("iPad")))')
+          echo "udid=$udid" >> "$GITHUB_OUTPUT"
+      # UI tests drive the simulator for minutes per flow on a hosted runner; they run
+      # locally (`bundle exec fastlane ui`) before a change to the screens.
+      - name: Unit tests
+        run: >
+          xcodebuild test -project Zhen.xcodeproj -scheme Zhen -quiet
+          -destination 'id=${{ steps.ipad.outputs.udid }}'
+          -only-testing:ZhenTests
+          CODE_SIGNING_ALLOWED=NO

@@ -1,0 +1,32 @@
+# ── Secrets ─────────────────────────────────────────────────────────────────
+# Nothing in this project needs credentials; the guard costs nothing.
+.env
+*.pem
+*.p12
+
+# ── Swift and SwiftPM ───────────────────────────────────────────────────────
+.build/
+.swiftpm/
+*.doccarchive
+
+# Package.resolved is committed: zhen-core is resolved by a version range, and the lock file
+# is what pins the exact release. It lives in
+# Zhen.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/.
+
+# ── Xcode ───────────────────────────────────────────────────────────────────
+# Zhen.xcodeproj is generated from project.yml (Scripts/generate-project.sh) and IS
+# committed, so a clone builds without XcodeGen. Per-user state and products are not.
+xcuserdata/
+DerivedData/
+/*.xcworkspace
+build/
+
+# ── macOS ───────────────────────────────────────────────────────────────────
+.DS_Store
+
+# ── fastlane ────────────────────────────────────────────────────────────────
+fastlane/test_output/
+fastlane/report.xml
+fastlane/README.md
+vendor/bundle/
+.bundle/
